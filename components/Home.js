@@ -10,7 +10,7 @@ function Home() {
   const [likedMovies, setLikedMovies] = useState([]);
   const [moviesData, setMoviesData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/movies`)
+    fetch(`https://mymoviz-app-backend.vercel.app/movies`)
       .then((response) => response.json())
       .then((data) => {
         setMoviesData(data.movies);
